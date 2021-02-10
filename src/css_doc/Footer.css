@@ -1,0 +1,272 @@
+.footer-page{
+    background-color: #111727;
+    /* background-image: url("https://teriyaki.space/wp-content/uploads/2020/04/bg.png");
+    background-repeat: repeat; */
+    color: rgb(214, 214, 214);
+    height: 270px;
+    text-align: center; 
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    
+}
+.footer-container{
+    display: grid;
+    grid-template-columns:3fr 3fr 3fr 3fr;
+    width: 100vw;
+}
+.name-title{
+    font-size: 1.5vw;
+    padding-top: 10%;
+    text-decoration: underline;
+}
+.footer-desci{
+    font-size: 1.2vw;
+    margin-top: 5%;
+    text-justify: inter-word;
+    text-align: justify;
+}
+.first-element{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding-left: 5%;
+
+   
+}
+.second-element{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+   
+
+   
+ 
+}
+.second-element a{
+    margin-top: 5%;
+    color: rgb(214, 214, 214);
+    font-size: 1.2vw;
+}
+.navi{
+    padding-top: 10%;
+    font-size: 1.5vw;
+    text-decoration: underline;
+}
+.third-element{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.fourth-element{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#contact-footer{
+    margin-top: 10%;
+    font-size: 1.5vw;
+    text-decoration: underline;
+}
+#number_1{
+    margin-top: 5%;
+    font-size: 1.2vw;
+}
+#number_2{
+    margin-top: 5%;
+    font-size: 1.2vw;
+}
+#email{
+    margin-top: 5%;
+    font-size: 1.2vw;
+}
+#status{
+    font-size: 1.5vw;
+    margin-top: 10%;
+    text-decoration: underline;
+}
+#open-status{
+    margin-top: 5%;
+    font-size: 1.2vw;
+  
+}
+#hire-btn{
+    border-radius: 20px;
+    background-color: #CB262F;
+    color: white;
+    border: none;
+    margin-top: 5%;
+    width: 10vw;
+    height: 5vh;
+    font-size: 1.5vw;
+}
+#hire-btn:hover{
+    opacity: 0.9;
+}
+.copy-right{
+ 
+    display: block;
+    bottom: 0;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    font-size: 1.2vw;
+}
+.icon-footer{
+    display: flex;
+    flex-direction: row;
+    font-size: 2.5vw;
+
+}
+.icon-footer i{
+    padding-left: 1%;
+}
+.icon-footer i:nth-child(1){
+    padding-left: 0%;
+}
+
+.connect-footer{
+    margin-top: 10%;
+    font-size: 1.5vw;
+}
+@media screen and (max-width:900px){
+    .footer-container{
+        display: grid;
+        grid-template-columns:1fr 1fr;
+        height: 380px;
+    }
+    .footer-page{
+        height: 450px;
+       
+    }
+    .copy-right{
+        font-size: 2vw;
+    }
+    .first-element{
+        text-align: center;
+    }
+    .footer-desci{
+        text-justify: unset;
+        text-align: unset;
+        font-size: 2vw;
+    }
+    .icon-footer{
+        justify-content: center;
+        margin-top: 0%;
+        font-size: 5vw;
+    }
+    .name-title{
+        margin-top: 0%;
+        font-size: 3vw;
+    }
+    .connect-footer{
+        margin-top: 0%;
+    }
+    .navi{
+        margin-top: 0%;
+        font-size: 3vw;
+    }
+    .second-element a{
+        margin-top: 1%;
+        font-size: 2vw;
+    }
+    #contact-footer{
+        margin-top: 0%;
+        font-size: 3vw;
+    }
+    #status{
+        margin-top: 0%;
+        font-size: 3vw;
+    }
+    #number_1{
+        margin-top: 5%;
+        font-size: 2vw;
+    }
+    #number_2{
+        margin-top: 1%;
+        font-size: 2vw;
+    }
+    #email{
+        margin-top: 1%;
+        font-size: 2vw;
+    }
+    #open-status{
+        font-size: 2vw;
+    }
+    #hire-btn{
+        width: 15vw;
+        font-size: 2vw;
+    }
+}
+@media screen and (max-width:550px){
+    .footer-container{
+        height: 300px;
+    }
+    .footer-page{
+        height: 350px;
+    }
+   
+}
+@media screen and (max-width: 500px){
+
+    .copy-right{
+        font-size: 2vw;
+    }
+    .first-element{
+        text-align: center;
+    }
+    .footer-desci{
+        text-justify: unset;
+        text-align: unset;
+        font-size: 2.6vw;
+    }
+    .icon-footer{
+        justify-content: center;
+        margin-top: 0%;
+        font-size: 8vw;
+    }
+    .name-title{
+        margin-top: 0%;
+        font-size: 4vw;
+    }
+    .connect-footer{
+        margin-top: 0%;
+    }
+    .navi{
+        margin-top: 0%;
+        font-size: 4vw;
+    }
+    .second-element a{
+        margin-top: 1%;
+        font-size: 2.6vw;
+    }
+    #contact-footer{
+        margin-top: 0%;
+        font-size: 4vw;
+    }
+    #status{
+        margin-top: 0%;
+        font-size: 4vw;
+    }
+    #number_1{
+        margin-top: 5%;
+        font-size: 2.6vw;
+    }
+    #number_2{
+        margin-top: 1%;
+        font-size: 2.6vw;
+    }
+    #email{
+        margin-top: 1%;
+        font-size: 2.6vw;
+    }
+    #open-status{
+        font-size: 2.6vw;
+    }
+    #hire-btn{
+        width: 20vw;
+        height: 30px;
+        font-size: 3vw;
+    }
+}

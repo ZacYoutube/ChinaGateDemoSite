@@ -1,0 +1,29 @@
+
+  .layout-main{
+    margin-bottom: 220px;
+
+  }
+  .layout-container{
+    position: relative;
+    height: fit-content;
+  }
+
+.layout-footer{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+   
+
+}
+@media screen and (max-width:900px){
+    .layout-main{
+        margin-bottom: 380px;
+      }
+}
+
+@media screen and (max-width:550px){
+    .layout-main{
+        margin-bottom: 300px;
+  }
+ 
+}
