@@ -63,15 +63,15 @@ class Toolbar extends Component {
               <ul className = 'toolbar_selection'>
                 <li>
                  {/* <i class = 'mdi mdi-home' style={{color:'white',fontSize:'medium',paddingRight:'2px'}}></i> */}
-                 <Link to='/'>Home</Link>
+                 <Link to='/ChinaGateDemoSite'>Home</Link>
                 </li>
                 <li>
                   {/* <i class ='mdi mdi-account-box' style={{color:'white',fontSize:'medium',paddingRight:'2px'}} ></i> */}
-                  <Link to='/About'>About</Link>
+                  <Link to='/ChinaGateDemoSite/About'>About</Link>
                 </li>
                 <li>
                 {/* <i class ='mdi mdi-apps' style={{color:'white',fontSize:'medium',paddingRight:'2px'}} ></i> */}
-                <Link to='/Menu'>Menu</Link>
+                <Link to='/ChinaGateDemoSite/Menu'>Menu</Link>
                 </li>
                 <li>
                 {/* <i class ='mdi mdi-file-document' style={{color:'white',fontSize:'medium',paddingRight:'2px'}} ></i> */}
@@ -79,7 +79,7 @@ class Toolbar extends Component {
                 </li> 
                 <li>
                 {/* <i class ='mdi mdi-file-document' style={{color:'white',fontSize:'medium',paddingRight:'2px'}} ></i> */}
-                <Link to='/Cart'>{this.props.carts.length > 0? <span style = {{color : 'red', fontSize:'25px'}}>Cart({this.cntMenu(this.props.carts)})</span> : `Cart`}</Link>
+                <Link to='/ChinaGateDemoSite/Cart'>{this.props.carts.length > 0? <span style = {{color : 'red', fontSize:'25px'}}>Cart({this.cntMenu(this.props.carts)})</span> : `Cart`}</Link>
                 </li> 
                 <li>
                 <button className = "log-in-butn" href='/Login'>Login</button>
