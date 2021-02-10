@@ -1027,7 +1027,7 @@ a:hover{
   }
   
 }
-@media screen and (max-width:400px){
+@media screen and (max-width:500px){
   .img {
     width: 100px;
     height: 80px;
@@ -1057,12 +1057,7 @@ a:hover{
     transition: 0.3s; */
   
   }
-  .brand-name{
-    top:28%;
-  }
-  .brand-name-1{
-    top:53%;
-  }
+ 
   .text-under-party-title{
     display: none;
   }
@@ -1079,4 +1074,12 @@ a:hover{
     font-size: 3vw;
   }
 
+}
+@media screen and (max-width: 400px){
+  .brand-name{
+    top:28%;
+  }
+  .brand-name-1{
+    top:53%;
+  }
 }
