@@ -63,7 +63,7 @@ class Toolbar extends Component {
               <ul className = 'toolbar_selection'>
                 <li>
                  {/* <i class = 'mdi mdi-home' style={{color:'white',fontSize:'medium',paddingRight:'2px'}}></i> */}
-                 <Link to='/ChinaGateDemoSite'>Home</Link>
+                 <Link to='/ChinaGateDemoSite/'>Home</Link>
                 </li>
                 <li>
                   {/* <i class ='mdi mdi-account-box' style={{color:'white',fontSize:'medium',paddingRight:'2px'}} ></i> */}
