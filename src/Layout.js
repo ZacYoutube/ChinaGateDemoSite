@@ -19,7 +19,7 @@ export default class Layout extends Component {
                 <div className = "layout-container">
                     <div className = "layout-header"><Toolbar/></div>
                     <Switch>
-                        <Route path='/ChinaGateDemoSite' exact strict component={Home} />
+                        <Route path='/ChinaGateDemoSite/' exact strict component={Home} />
                         <Route path='/ChinaGateDemoSite/About' exact strict component={About} />
                         <Route path='/ChinaGateDemoSite/Menu' exact strict component={Menu} />
                         <Route path='/ChinaGateDemoSite/Cart' exact strict component={Cart} />
