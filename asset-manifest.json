@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/ChinaGateDemoSite/static/css/main.88d5e1a4.chunk.css",
-    "main.js": "/ChinaGateDemoSite/static/js/main.6b24bca6.chunk.js",
-    "main.js.map": "/ChinaGateDemoSite/static/js/main.6b24bca6.chunk.js.map",
+    "main.js": "/ChinaGateDemoSite/static/js/main.1ba0a520.chunk.js",
+    "main.js.map": "/ChinaGateDemoSite/static/js/main.1ba0a520.chunk.js.map",
     "runtime-main.js": "/ChinaGateDemoSite/static/js/runtime-main.bb912437.js",
     "runtime-main.js.map": "/ChinaGateDemoSite/static/js/runtime-main.bb912437.js.map",
     "static/css/2.8b58159c.chunk.css": "/ChinaGateDemoSite/static/css/2.8b58159c.chunk.css",
@@ -76,6 +76,6 @@
     "static/css/2.8b58159c.chunk.css",
     "static/js/2.4fe19b5d.chunk.js",
     "static/css/main.88d5e1a4.chunk.css",
-    "static/js/main.6b24bca6.chunk.js"
+    "static/js/main.1ba0a520.chunk.js"
   ]
 }
