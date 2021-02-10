@@ -15,7 +15,7 @@
     width: 45vw;
     height: 38vw;
     z-index: 3;
-    opacity:70%;
+    opacity:0.7;
     animation: food-animation 2s ease-in;
     animation-duration: 2s;
 }
