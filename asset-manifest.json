@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/ChinaGateDemoSite/static/css/main.855d8684.chunk.css",
+    "main.css": "/ChinaGateDemoSite/static/css/main.88d5e1a4.chunk.css",
     "main.js": "/ChinaGateDemoSite/static/js/main.d60f8f91.chunk.js",
     "main.js.map": "/ChinaGateDemoSite/static/js/main.d60f8f91.chunk.js.map",
     "runtime-main.js": "/ChinaGateDemoSite/static/js/runtime-main.bb912437.js",
@@ -12,7 +12,7 @@
     "static/js/3.2dc66e2e.chunk.js.map": "/ChinaGateDemoSite/static/js/3.2dc66e2e.chunk.js.map",
     "index.html": "/ChinaGateDemoSite/index.html",
     "static/css/2.8b58159c.chunk.css.map": "/ChinaGateDemoSite/static/css/2.8b58159c.chunk.css.map",
-    "static/css/main.855d8684.chunk.css.map": "/ChinaGateDemoSite/static/css/main.855d8684.chunk.css.map",
+    "static/css/main.88d5e1a4.chunk.css.map": "/ChinaGateDemoSite/static/css/main.88d5e1a4.chunk.css.map",
     "static/js/2.4fe19b5d.chunk.js.LICENSE.txt": "/ChinaGateDemoSite/static/js/2.4fe19b5d.chunk.js.LICENSE.txt",
     "static/media/Chinese food.6e8473eb.png": "/ChinaGateDemoSite/static/media/Chinese food.6e8473eb.png",
     "static/media/Chow-mein.0ae7d59c.jpg": "/ChinaGateDemoSite/static/media/Chow-mein.0ae7d59c.jpg",
@@ -75,7 +75,7 @@
     "static/js/runtime-main.bb912437.js",
     "static/css/2.8b58159c.chunk.css",
     "static/js/2.4fe19b5d.chunk.js",
-    "static/css/main.855d8684.chunk.css",
+    "static/css/main.88d5e1a4.chunk.css",
     "static/js/main.d60f8f91.chunk.js"
   ]
 }
