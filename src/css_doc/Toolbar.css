@@ -139,6 +139,12 @@
  .nav-act{
      transform: translateX(0%);
  }
+ @media screen and (max-width: 500px){
+    .log-in-butn{
+        width: 20vw;
+        font-size: 17px;
+    }
+ }
 
  @keyframes navLi{
      from{
