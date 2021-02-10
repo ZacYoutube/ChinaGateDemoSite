@@ -1073,6 +1073,9 @@ a:hover{
   .card-text-1{
     font-size: 3vw;
   }
+  .sushi_pic{
+    opacity: 1;
+  }
 
 }
 @media screen and (max-width: 400px){
@@ -1082,4 +1085,5 @@ a:hover{
   .brand-name-1{
     top:53%;
   }
+  
 }
