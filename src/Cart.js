@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {connect} from 'react-redux';
 import './css_doc/Cart.css';
 import {DELETE_DISH, INCREMENT, DECREMENT} from './constants/action-types';
-import empty_cart from './sushi_assets/empty-cart.png';
+import empty_cart from './sushi_assets/empty-cart-removebg-preview (1).png';
 const bullet = document.getElementsByClassName('bullet');
 const button_1 = document.getElementById('button-1');
 let current_step = 1;
@@ -17,6 +17,7 @@ for(let i = 0; i < 11; i++){
     this.isCheckoutTrue = this.isCheckoutTrue.bind(this);
     this.checkProperties = this.checkProperties.bind(this);
     this.orderSuccess = this.orderSuccess.bind(this);
+    this.listenForWindowSize = this.listenForWindowSize.bind(this);
     this.state = {
         carts:[],
         isCheckoutTrue: false,
@@ -42,11 +43,12 @@ for(let i = 0; i < 11; i++){
   }
   componentDidMount = () => { 
     this.setState({carts: this.props.carts});
-    if(window.innerWidth < 600){
+    if(window.innerWidth < 700){
       this.setState({go_back_btn_txt: 'Go back', continue_btn_txt: 'Checkout'})
     }else{
       this.setState({go_back_btn_txt: 'Go back to your cart', continue_btn_txt: 'Continue to checkout'})
     }
+    window.addEventListener("resize", this.listenForWindowSize);
     current_step = 1;
     if(this.props.carts.length > 0){
       bullet[0].style.backgroundColor = '#CB262F';
@@ -56,6 +58,14 @@ for(let i = 0; i < 11; i++){
       bullet[0].style.border = `${1}px solid grey`;
     }
     
+  }
+
+  listenForWindowSize(){
+    if(window.innerWidth < 700){
+      this.setState({go_back_btn_txt: 'Go back', continue_btn_txt: 'Checkout'})
+    }else{
+      this.setState({go_back_btn_txt: 'Go back to your cart', continue_btn_txt: 'Continue to checkout'})
+    }
   }
   update(e,i){
       e.preventDefault();
@@ -345,7 +355,7 @@ for(let i = 0; i < 11; i++){
                
                 {cart_item}
                 
-                <p>Total <span className="price"><b style = {{color: '#CB262F'}}>${total.toFixed(2)}</b></span></p>
+                <p>Total <span className="price"><b style = {{color: 'red'}}>${total.toFixed(2)}</b></span></p>
               </div>
             </div>
           </div>

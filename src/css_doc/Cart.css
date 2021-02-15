@@ -1,12 +1,18 @@
 .cart-component{
     height: fit-content;
-    background-image: url("https://teriyaki.space/wp-content/uploads/2020/04/bg.png");
-    background-repeat: repeat;
+    /* background-image: url("https://teriyaki.space/wp-content/uploads/2020/04/bg.png"); */
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.6)
+      ),url('https://images.unsplash.com/photo-1563245372-f21724e3856d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1729&q=80');
+    background-repeat: no-repeat;
+    background-size: cover;
     display: block;
     overflow: hidden;
 }
 #cart-container{
   margin-bottom: 100px;
+  
 }
 .cart-entire{
     margin-bottom: 100px;
@@ -23,7 +29,7 @@
     margin-left: auto;
     margin-right: auto;
     width: 80%;
-    background-color: #101930;
+    /* background-color: rgba( 16, 25, 48, 0.4); */
     color:white;
     height: fit-content;
     margin-top: 2%;
@@ -32,6 +38,12 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    background-color: rgba(16, 25, 48, 0.1);
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border-radius: 10px;
+   
+
 }
 .ordered-img{
     width: 250px;
@@ -70,20 +82,23 @@
     margin-left: auto;
     margin-right: auto;
     width: 80%;
-    background-color: #101930;
+    background-color: rgba(16, 25, 48, 0.1);
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border-radius: 10px;
     color:#D74552;
     height: fit-content;
     margin-top: 2%;
     min-height: 400px;
-    border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 .empty-cart img{
-    width: 50%;
+    width: 30%;
     height: 30%;
+    margin-top: 5%;
 }
 .empty-cart span{
     font-family: 'Rosarivo', serif;
@@ -109,6 +124,8 @@
 }
 .price-display{
   font-weight: bold;
+  color: red;
+  font-style: italic;
 }
 .total-prices{
     text-align: center;
@@ -131,14 +148,16 @@
 }
 #check-out{
     height: fit-content;
-    background-color: #101930;
+    background-color: rgba(16, 25, 48, 0.1);
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border-radius: 10px;
     width: 80%;
     transform: translateX(1500px);
     text-align: center;
     margin-left: auto;
     margin-right: auto;
     display: none;
-    border-radius: 10px;
     /* margin-bottom: 60px; */
 }
 .row {
@@ -294,7 +313,10 @@
   display: none;
   width: 80%;
   height:200px;
-  background-color: #101930;
+  /* background-color: #101930; */
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur( 20px );
+  -webkit-backdrop-filter: blur( 20px );
   transform: translateX(1500px);
   /* margin-bottom: 60px; */
   text-align: center;

@@ -61,13 +61,13 @@ export default class Footer extends Component {
             <div id = 'second-div' className = 'second-element'>
               <div className = 'navi'>Navigation</div>
              
-                  <Link to= '/'>Home</Link>
+                  <Link to= '/ChinaGateDemoSite/'>Home</Link>
               
-                  <Link to= '/About'>About</Link>
+                  <Link to= '/ChinaGateDemoSite/About'>About</Link>
               
-                  <Link to= '/Menu'>Menu</Link>
+                  <Link to= '/ChinaGateDemoSite/Menu'>Menu</Link>
                 
-                  <Link to= '/Contact'>Contact</Link>
+                  <Link to= '/ChinaGateDemoSite/Contact'>Contact</Link>
               
             </div>
             <div className = 'third-element'>

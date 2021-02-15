@@ -179,6 +179,11 @@ export default class Home extends Component
   componentDidMount(){
       window.addEventListener("resize", this.listenForWindowSize);
     // this.navListener();
+    if(window.innerWidth < 500){
+      this.setState({slider_width: 90});
+    }else{
+      this.setState({slider_width: 47});
+    }
       this.windowScroll(); 
       this.setSize();
       this.cycle();

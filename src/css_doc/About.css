@@ -730,21 +730,43 @@
    
     #about-1{
         width: 35vw;
+        padding-bottom: 10%;
+        height: 200px;
+     }
+     #about-1.active{
+         transform: translateY(-5px);
      }
      #about-2{
          width: 35vw;
-         margin-left: 15%;
+         margin-left: 13%;
+         height: 200px;
+         padding-bottom: 10%;
      }
+     #about-2.active{
+        transform: translateY(-5px);
+    }
      #about-3{
          width: 35vw;
          margin-left: 0;
          margin-top: 5%;
+         height: 200px;
+         padding-bottom: 10%;
+
      }
+     #about-3.active{
+        transform: translateY(-5px);
+    }
      #about-4{
          width: 35vw;
          margin-top: 5%;
          margin-left: 15%;
+         height: 200px;
+         padding-bottom: 10%;
+
      }
+     #about-4.active{
+        transform: translateY(-5px);
+    }
     
 }
 @media screen and (max-width: 600px){
@@ -757,12 +779,34 @@
     }
     #about-3{
         width: 40vw;
+        margin-top: 10%;
     }
     #about-4{
         width: 40vw;
         margin-left: 10%;
+        margin-top: 10%;
     }
     .about-header{
         margin-top: 20%;
     }
+    .weather-display{
+        width: 90%;
+    }
+    .amenity-card{
+        width: 90%;
+    }
+    .map-container{
+        width: 90%;
+    }
+    .about-card{
+        width: 90%;
+    }
+    .about-title{
+        font-size: 15px;
+    }
+    .about-context{
+        font-size: 12px;
+    }
+
 }
+

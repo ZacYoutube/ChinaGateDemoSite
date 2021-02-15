@@ -75,7 +75,7 @@ class Toolbar extends Component {
                 </li>
                 <li>
                 {/* <i class ='mdi mdi-file-document' style={{color:'white',fontSize:'medium',paddingRight:'2px'}} ></i> */}
-                <Link to='#resume'>Contact</Link>
+                <Link to='/ChinaGateDemoSite/Contact'>Contact</Link>
                 </li> 
                 <li>
                 {/* <i class ='mdi mdi-file-document' style={{color:'white',fontSize:'medium',paddingRight:'2px'}} ></i> */}

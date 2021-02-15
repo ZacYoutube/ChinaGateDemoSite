@@ -8,6 +8,7 @@ import About from './About';
 import Menu from './Menu';
 import Login from './Login';
 import Cart from './Cart';
+import Contact from './Contact';
 
 export default class Layout extends Component {
     render() {
@@ -24,6 +25,8 @@ export default class Layout extends Component {
                         <Route path='/ChinaGateDemoSite/Menu' exact strict component={Menu} />
                         <Route path='/ChinaGateDemoSite/Cart' exact strict component={Cart} />
                         <Route path='/ChinaGateDemoSite/Login' exact strict component={Login} />
+                        <Route path='/ChinaGateDemoSite/Contact' exact strict component={Contact} />
+
                     </Switch>
                     <div className = "layout-main">{this.props.children}</div>
                     <div className = "layout-footer"><Footer></Footer></div>
