@@ -3,6 +3,8 @@ import { connect } from "react-redux";
 import './css_doc/Toolbar.css';
 import logo from "./sushi_assets/logo.png";
 import {Link} from 'react-router-dom';
+import {TOGGLE_OPEN} from './constants/action-types';
+
 
 class Toolbar extends Component {
   constructor(){
@@ -45,6 +47,7 @@ class Toolbar extends Component {
    
   }
   render() {
+    console.log(this.props.isOpen);
     return (
       <div>
         
@@ -82,7 +85,7 @@ class Toolbar extends Component {
                 <Link to='/ChinaGateDemoSite/Cart'>{this.props.carts.length > 0? <span style = {{color : 'red', fontSize:'25px'}}>Cart({this.cntMenu(this.props.carts)})</span> : `Cart`}</Link>
                 </li> 
                 <li>
-                <button className = "log-in-butn" href='/Login'>Login</button>
+                <button className = "log-in-butn" onClick = {() => this.props.toggle_open()}>Login</button>
                 </li>
               </ul>
            
@@ -106,10 +109,18 @@ class Toolbar extends Component {
 
 const mapStateToProps = (state) => {
   return {
-    carts: state.carts
+    carts: state.carts,
+    isOpen : state.isOpen
   };
 }
-
+const mapDispatchToProps = dispatch =>{
+  return {
+    toggle_open: () =>{
+      dispatch({type:TOGGLE_OPEN})
+    }
+  }
+}
 export default connect(
   mapStateToProps,
+  mapDispatchToProps
 )(Toolbar)

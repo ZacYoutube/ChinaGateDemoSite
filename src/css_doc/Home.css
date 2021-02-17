@@ -76,6 +76,7 @@
     height: 700px;
     margin-top: 70px;
     transform: rotate(10deg);
+    transform-origin: 0% 0%;
     filter: opacity(1) drop-shadow(0 0 0 blue);
   }
 .brand-name{
@@ -119,7 +120,6 @@
     border-radius: 50%;
 } */
 .container-fish{
- 
     position: absolute;
     z-index: 9;
     left: 0px;
@@ -791,6 +791,17 @@ a:hover{
   display: flex;
   align-items: flex-start;
 }
+/* .rotate {
+  animation: rotation 2s infinite linear;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
 @media screen and (max-width:1100px){
 
   .card-body{
@@ -867,6 +878,7 @@ a:hover{
   }
 
 }
+
 @media screen and (max-width:878px){
   .tabcontent{
     width: 60%;

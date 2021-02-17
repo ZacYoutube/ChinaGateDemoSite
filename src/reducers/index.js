@@ -1,9 +1,10 @@
-import {ADD_CART,DELETE_DISH,INCREMENT,DECREMENT} from '../constants/action-types';
+import {ADD_CART,DELETE_DISH,INCREMENT,DECREMENT,TOGGLE_OPEN,TOGGLE_CLOSE} from '../constants/action-types';
 
 
 
 const initialState = {
-    carts: []
+    carts: [],
+    isOpen: false,
   };
 function checkIfContained(arr, str){
     for(let i = 0; i < arr.length; i++){
@@ -84,7 +85,19 @@ function rootReducer(state = initialState, action) {
                 })
             }
          
-        case 'CLEAR':
+        case TOGGLE_OPEN:
+            console.log('im inside toggle open!');
+            return {
+                ...state,
+                isOpen: true
+            }
+        
+        case TOGGLE_CLOSE:
+            console.log('im inside toggle close!');
+            return {
+                ...state,
+                isOpen: false
+            }
             
             
 
