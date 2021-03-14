@@ -154,7 +154,8 @@ iframe {
 
 .wrap-contact100 {
   width: 100%;
-  background-color:rgb(17, 23, 39, 0.2);
+  /* background-color:rgb(17, 23, 39, 0.2); */
+  background: transparent;
   backdrop-filter: blur( 20px );
   -webkit-backdrop-filter: blur( 20px );
   border-radius: 10px;
@@ -193,7 +194,7 @@ iframe {
   height: 100%;
   top: 0;
   left: 0;
-  background: rgba(0,0,0,0.6);
+  background: rgba(0,0,0,0.3);
 }
 
 

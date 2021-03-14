@@ -137,6 +137,7 @@ export default class About extends Component {
             }
         })
         this.setState({weather_forecast : data});
+        console.log(day_1_str,day_1_index)
         let celcius_day1 = Math.round(parseFloat(data.list[day_1_index].main.temp)-273.15);
         let fahrenheit_day1 = Math.round(((parseFloat(data.list[day_1_index].main.temp)-273.15)*1.8)+32);
         let celcius_day2 = Math.round(parseFloat(data.list[day_2_index].main.temp)-273.15);

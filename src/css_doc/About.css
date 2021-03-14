@@ -230,39 +230,40 @@
     border-radius: 20px;
     float: left;
     display: block; 
-    perspective: 1000px;
-    margin-left: -5%;
+    /* perspective: 1000px; */
 
 }
 .when-section{
-   
+    margin-left: 5%;
     width: 25vw;
     margin-top: 5%;
-    margin-left: -3%;
+    /* margin-left: -3%; */
     float: left;
     border-radius: 20px;
     display: block;
-    perspective: 1000px;
+    /* perspective: 1000px; */
 
 }
 .amenity{
     width: 25vw;
     margin-top: 5%;
-    margin-left: -3%;
+    margin-left: 5%;
     float: left;
     border-radius: 20px;
     display: block;
-    perspective: 1000px;
+    /* perspective: 1000px; */
 }
 .weather-display{
     width: 25vw;
-    margin-left: -3%;
+    /* margin-left: -3%; */
     margin-bottom: 0%;
     border-radius: 20px;
     display: block;
-    float: left;
+    /* float: left; */
+    clear: both;
     color: white;
-    perspective: 1000px;
+    padding-top: 5%;
+    /* perspective: 1000px; */
 }
 .weather-flex{
     display: flex;
@@ -359,13 +360,14 @@
     /* background-color: #101930 ; */
     background-image: url("https://teriyaki.space/wp-content/uploads/2020/04/bg.png");
     background-repeat: repeat;
-    transform: rotateY(50deg);
+    /* transform: rotateY(50deg); */
     border: 2px solid #0e1425;
+
 }
 .amenity-card:hover{
-    transform: rotateY(0);
+    /* transform: rotateY(0);
     transition-timing-function: ease-in;
-    transition: 1s;
+    transition: 1s; */
 }
 .weather-card{
     width: 100%;
@@ -373,13 +375,14 @@
     /* background-color: #101930 ; */
     background-image: url("https://teriyaki.space/wp-content/uploads/2020/04/bg.png");
     background-repeat: repeat;
-    transform: rotateY(50deg);
+    /* transform: rotateY(50deg); */
     border: 2px solid #0e1425;
+
 }
 .weather-card:hover{
-    transform: rotateY(0);
+    /* transform: rotateY(0);
     transition-timing-function: ease-in;
-    transition: 1s;
+    transition: 1s; */
 }
 .map-card{
     width: 25vw;
@@ -387,14 +390,14 @@
     /* background-color: #101930 ; */
     background-image: url("https://teriyaki.space/wp-content/uploads/2020/04/bg.png");
     background-repeat: repeat;
-    transform: rotateY(50deg);
+    /* transform: rotateY(50deg); */
     border: 2px solid #0e1425;
 
 }
 .map-card:hover{
-    transform: rotateY(0);
+    /* transform: rotateY(0);
     transition-timing-function: ease-in;
-    transition: 1s;
+    transition: 1s; */
 
 }
 .about-card{
@@ -403,14 +406,13 @@
     background-image: url("https://teriyaki.space/wp-content/uploads/2020/04/bg.png");
     background-repeat: repeat;
     border-radius: 20px;
-    transform: rotateY(50deg);
+    /* transform: rotateY(50deg); */
     border: 2px solid #0e1425;
-
 }
 .about-card:hover{
-    transform: rotateY(0);
+    /* transform: rotateY(0);
     transition-timing-function: ease-in;
-    transition: 1s;
+    transition: 1s; */
 
 }
 .about-card-list{
@@ -647,6 +649,7 @@
         margin-left: auto;
         margin-right: auto;
         perspective: none;
+        padding-top:0px;
         margin-top: 5%;
     }
     .weather-card{

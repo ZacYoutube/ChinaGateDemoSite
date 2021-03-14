@@ -1,12 +1,11 @@
 .cart-component{
     height: fit-content;
-    /* background-image: url("https://teriyaki.space/wp-content/uploads/2020/04/bg.png"); */
-    background-image: linear-gradient(
+    background-image: url("https://teriyaki.space/wp-content/uploads/2020/04/bg.png");
+    /* background-image: linear-gradient(
         rgba(0, 0, 0, 0.6),
         rgba(0, 0, 0, 0.6)
-      ),url('https://images.unsplash.com/photo-1563245372-f21724e3856d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1729&q=80');
-    background-repeat: no-repeat;
-    background-size: cover;
+      ),url('https://images.unsplash.com/photo-1563245372-f21724e3856d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1729&q=80'); */
+    background-repeat: repeat;
     display: block;
     overflow: hidden;
 }
@@ -38,9 +37,9 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    background-color: rgba(16, 25, 48, 0.1);
-    backdrop-filter: blur( 20px );
-    -webkit-backdrop-filter: blur( 20px );
+    background: url('../sushi_assets/cart-back.png');
+    background-repeat: repeat;
+    background-size: auto;
     border-radius: 10px;
    
 
@@ -82,9 +81,11 @@
     margin-left: auto;
     margin-right: auto;
     width: 80%;
-    background-color: rgba(16, 25, 48, 0.1);
-    backdrop-filter: blur( 20px );
-    -webkit-backdrop-filter: blur( 20px );
+    background: url('../sushi_assets/cart-back.png');
+    background-repeat: repeat;
+    background-size: auto;
+    /* backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px ); */
     border-radius: 10px;
     color:#D74552;
     height: fit-content;
@@ -148,9 +149,12 @@
 }
 #check-out{
     height: fit-content;
-    background-color: rgba(16, 25, 48, 0.1);
+    /* background-color: rgba(16, 25, 48, 0.1);
     backdrop-filter: blur( 20px );
-    -webkit-backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px ); */
+    background: url('../sushi_assets/cart-back.png');
+    background-repeat: repeat;
+    background-size: auto;
     border-radius: 10px;
     width: 80%;
     transform: translateX(1500px);
@@ -314,9 +318,12 @@
   width: 80%;
   height:200px;
   /* background-color: #101930; */
-  background-color: rgba(255, 255, 255, 0.1);
+  /* background-color: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur( 20px );
-  -webkit-backdrop-filter: blur( 20px );
+  -webkit-backdrop-filter: blur( 20px ); */
+  background: url('../sushi_assets/cart-back.png');
+  background-repeat: repeat;
+  background-size: auto;
   transform: translateX(1500px);
   /* margin-bottom: 60px; */
   text-align: center;
