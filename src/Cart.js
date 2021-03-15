@@ -257,7 +257,7 @@ for(let i = 0; i < 11; i++){
             <div>Total: </div>
             <div><span>${total.toFixed(2)}</span></div>
             <div>
-            <button className = 'check-out-btn' onClick = {(e)=>this.isCheckoutTrue(e)}>Check Out</button>
+            <button className = 'check-out-btn' onClick = {(e)=>this.isCheckoutTrue(e)}>Pay</button>
             </div>
           </div> 
           :
