@@ -14,6 +14,16 @@
     bottom: 0;
   
 }
+.login-modal{
+  z-index: 12;
+  text-align: center;
+}
+.login-modal h1{
+  color: white;
+  margin-top: 3%;
+  font-family: 'Comfortaa', cursive;
+  font-family: 'Kanit', sans-serif;
+}
 .login-form-container{
   /* border:1px solid red; */
   width: 100%;

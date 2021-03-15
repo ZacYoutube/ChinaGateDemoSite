@@ -468,28 +468,28 @@ export default class Home extends Component
                   <div class = "content-container">
 
                     <div id="Breakfast" class="tabcontent">
-                          <h3>Breakfast</h3>
+                          <h2>Breakfast</h2>
                           <ul>
                           {breakfast_images}
                           </ul>
                         </div>
 
                       <div id="Lunch" class="tabcontent">
-                        <h3>Lunch</h3>
+                        <h2>Lunch</h2>
                         <ul>
                           {lunch_images}
                         </ul>
                       </div>
 
                       <div id="Dinner" class="tabcontent" >
-                        <h3>Dinner</h3>
+                        <h2>Dinner</h2>
                         <ul>
                           {dinner_images}
                         </ul>
                       </div>
 
                       <div id="Drinks" class="tabcontent">
-                        <h3>Drinks</h3>
+                        <h2>Drinks</h2>
                         <ul>
                          {drink_list}
                         </ul>

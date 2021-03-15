@@ -15,10 +15,6 @@ import haze from './sushi_assets/fog.svg';
 import wind from './sushi_assets/wind.svg';
 
 
-
-
-
-
 export default class About extends Component {
   constructor(){
     super();
@@ -178,18 +174,18 @@ export default class About extends Component {
         let description_3 = data.list[day_3_index].weather[0].description;
 
         if( description_1.includes('rain') ) {
-                document.getElementById('day-1-img').src = rain;
+          document.getElementById('day-1-img').src = rain;
         } else if( description_1.includes('cloud') ) {
             if(description_1.includes('few clouds')){
-                document.getElementById('day-1-img').src = few_cloud_day;
+              document.getElementById('day-1-img').src = few_cloud_day;
           }
           else{
             document.getElementById('day-1-img').src = cloudy;
           }
         } else if( description_1.includes('sunny') ) {
-              document.getElementById('day-1-img').src = day;
+          document.getElementById('day-1-img').src = day;
         } else if( description_1.includes('clear')){
-              document.getElementById('day-1-img').src = day;
+          document.getElementById('day-1-img').src = day;
         }else if(description_1.includes('haze')){
           document.getElementById('weather-img').src = haze;
           document.getElementById('weather-img').style.width = `${50}px`;
@@ -205,7 +201,7 @@ export default class About extends Component {
           document.getElementById('day-2-img').src = rain;
           } else if( description_2.includes('cloud') ) {
               if(description_2.includes('few clouds')){
-                  document.getElementById('day-2-img').src = few_cloud_day;
+                document.getElementById('day-2-img').src = few_cloud_day;
             }
             else{
               document.getElementById('day-2-img').src = cloudy;
@@ -213,7 +209,7 @@ export default class About extends Component {
           } else if( description_2.includes('sunny') ) {
             document.getElementById('day-2-img').src = day;
           } else if( description_2.includes('clear')){ 
-                document.getElementById('day-2-img').src = day;
+            document.getElementById('day-2-img').src = day;
           }
           else if(description_2.includes('haze')){
             document.getElementById('weather-img').src = haze;
@@ -230,15 +226,15 @@ export default class About extends Component {
               document.getElementById('day-3-img').src = rain;
           } else if( description_3.includes('cloud') ) {
                 if(description_3.includes('few clouds')){
-                    document.getElementById('day-3-img').src = few_cloud_day;
+                  document.getElementById('day-3-img').src = few_cloud_day;
               }
               else{
                 document.getElementById('day-3-img').src = cloudy;
               }
             } else if( description_3.includes('sunny') ) {
-                  document.getElementById('day-3-img').src = day;
+              document.getElementById('day-3-img').src = day;
             } else if( description_3.includes('clear')){
-                  document.getElementById('day-3-img').src = day;
+              document.getElementById('day-3-img').src = day;
             }else if(description_3.includes('haze')){
               document.getElementById('weather-img').src = haze;
               document.getElementById('weather-img').style.width = `${50}px`;

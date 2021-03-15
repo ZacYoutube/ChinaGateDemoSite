@@ -86,6 +86,7 @@ class Menu extends Component {
   }
   componentDidMount(){
     document.getElementById("defaultOpen").click();
+    console.log(window.innerWidth);
   }
   toggle(){
     // this.setState({toggleOpen : !this.state.toggleOpen});
@@ -103,7 +104,7 @@ class Menu extends Component {
   //   }))
   // }
   openMenu(e, foodType) {
-    let elem =  document.querySelectorAll('.content-container .active');
+    let elem =  document.querySelectorAll('.menu-content-container .active');
     [].forEach.call(elem, function(el){
       el.classList.remove('active');
     });
@@ -117,7 +118,7 @@ class Menu extends Component {
       }
    
    
-    tablinks = document.getElementsByClassName("tablinks");
+    tablinks = document.getElementsByClassName("menu-tablinks");
     for (i = 0; i < tablinks.length; i++) {
       tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
@@ -201,7 +202,7 @@ class Menu extends Component {
     const drink_list = this.state.drink_list.map((each, index)=>{
       return <li>
                 <div className = "food-name-price-pic">
-                  <img src = {each.url} className = "drink-img"/>
+                  <img src = {each.url} className = "menu-drink-img"/>
                   <div className = "menu-food-name-price">
                   <div style = {{display:'flex', alignItems:'center',justifyContent: 'space-between'}}>
                     <div>
@@ -227,17 +228,17 @@ class Menu extends Component {
          <div id="snackbar">Added dish succesfully to your cart.</div>
          <div className = 'menu-body'>
            <div className = 'menu-img'>
-             <div className = 'tab-navs'>
-                <button class="tablinks" onClick={(e)=>this.openMenu(e, 'Breakfast')}  id="defaultOpen">Breakfast</button>
-                <button class="tablinks" onClick={(e)=>this.openMenu(e, 'Lunch')}>Lunch</button>
-                <button class="tablinks" onClick={(e)=>this.openMenu(e, 'Dinner')}>Dinner</button>
-                <button class="tablinks" onClick={(e)=>this.openMenu(e, 'Drink')}>Drinks</button>
+             <div className = 'menu-tab-navs'>
+                <button class="menu-tablinks" onClick={(e)=>this.openMenu(e, 'Breakfast')}  id="defaultOpen">Breakfast</button>
+                <button class="menu-tablinks" onClick={(e)=>this.openMenu(e, 'Lunch')}>Lunch</button>
+                <button class="menu-tablinks" onClick={(e)=>this.openMenu(e, 'Dinner')}>Dinner</button>
+                <button class="menu-tablinks" onClick={(e)=>this.openMenu(e, 'Drink')}>Drinks</button>
              </div>
                 
                 
                 <div className = 'body_1'>
 
-                    <div class = "content-container">
+                    <div class = "menu-content-container">
                           <div id="Breakfast" class="menu-tabcontent">
                             {breakfast_images}
                           </div>

@@ -6,10 +6,10 @@ import './css_doc/layout.css';
 import Home from './Home';
 import About from './About';
 import Menu from './Menu';
-import Login from './Login';
 import Cart from './Cart';
 import Contact from './Contact';
 import ReactModalLogin from "react-modal-login";
+import Modal from './Login_Modal.js';
 import { connect } from "react-redux";
 import {TOGGLE_CLOSE} from './constants/action-types';
 
@@ -87,12 +87,16 @@ class Layout extends Component {
                         <Route path='/ChinaGateDemoSite/About' exact strict component={About} />
                         <Route path='/ChinaGateDemoSite/Menu' exact strict component={Menu} />
                         <Route path='/ChinaGateDemoSite/Cart' exact strict component={Cart} />
-                        <Route path='/ChinaGateDemoSite/Login' exact strict component={Login} />
+                        {/* <Route path='/ChinaGateDemoSite/Login' exact strict component={Login} /> */}
                         <Route path='/ChinaGateDemoSite/Contact' exact strict component={Contact} />
                     </Switch>
                    
                     <div className = "layout-main">{this.props.children}</div>
-                    <ReactModalLogin
+                    <div className = 'login-modal'>
+                      <Modal show = {this.props.isOpen} handleClose = {() => this.props.toggle_close()}>
+                         <h1> Sign In</h1>
+                      </Modal>
+                    {/* <ReactModalLogin
                         visible={this.props.isOpen}
                         onCloseModal={() => this.props.toggle_close()}
                         loading={this.state.loading}
@@ -135,7 +139,9 @@ class Layout extends Component {
                         tabs = {{
                         }}
                         overlayClass = 'overlay'
-                        />
+                        /> */}
+                    </div>
+                   
                     <div className = "layout-footer"><Footer></Footer></div>
                     <br clear="both"/>
 

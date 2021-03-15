@@ -1,0 +1,42 @@
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+  }
+  
+  .modal-main {
+    position:fixed;
+    background-color: #11192ae3;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 450px;
+    height: 350px;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+  }
+  
+
+
+  .display-block {
+    display: block;
+    
+  }
+  
+  .display-none {
+    display: none;
+    
+  }
+
+  #close{
+    float:right;
+    display:inline-block;
+    padding:0px 6px;
+    background:transparent;
+    color: whitesmoke;
+  }
