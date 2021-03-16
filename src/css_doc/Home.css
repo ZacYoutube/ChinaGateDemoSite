@@ -581,6 +581,7 @@ a:hover{
   color: whitesmoke;
   text-decoration: underline;
   text-transform: uppercase;
+  transition: ease-out 1s;
 }
 
 /* Style the tab content */

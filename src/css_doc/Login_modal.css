@@ -15,7 +15,7 @@
     box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     width: 450px;
-    height: 350px;
+    height: fit-content;
     top:50%;
     left:50%;
     transform: translate(-50%,-50%);
@@ -44,6 +44,6 @@
   @media screen and (max-width: 500px){
       .modal-main{
           width: 300px;
-          height: 270px;
+          height: fit-content;
       }
   }

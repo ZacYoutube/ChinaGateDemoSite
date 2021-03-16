@@ -21,8 +21,9 @@
 .login-modal h1{
   color: white;
   margin-top: 3%;
-  font-family: 'Comfortaa', cursive;
-  font-family: 'Kanit', sans-serif;
+  /* font-family: 'Comfortaa', cursive;
+  font-family: 'Kanit', sans-serif; */
+  margin-bottom: 3%;
 }
 .login-form-container{
   /* border:1px solid red; */
@@ -49,6 +50,90 @@
 .input-field{
   background-color: #111727;
 }
+
+.input-icon-1{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+.input-icon-2{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+.input-icon-1 i{
+  position: absolute;
+  left: 15px; 
+  top: 22px; 
+  color:grey;
+  font-size: larger;
+}
+.input-icon-2 i{
+  position: absolute;
+  left: 15px; 
+  top: 22px; 
+  color:grey;
+  font-size: larger;
+}
+
+.input-icon-1 input[type = text]{
+  padding-left: 40px;
+}
+.input-icon-2 input[type = password]{
+  width: 100%;
+  padding-left: 40px;
+}
+.field{
+  margin-top: 3%;
+  height: 50px;
+  border-radius: 4px;
+  transition: 0.3s all;
+}
+.signin-btn{
+  margin-top: 10%;
+}
+.signin-btn button{
+  color:white;
+  border-radius: 4px;
+  background-color: #cb262e;
+  height: 50px;
+  width: 80%;
+  font-size: larger;
+}
+.forget-password {
+  width: 90%;
+  margin-top: 3%;
+}
+.forget-password span{
+  color: rgb(0, 162, 255);
+  cursor: pointer;
+  float: right;
+  margin-bottom: 5%;
+  
+}
+.or{
+  color: white;
+  font-size: larger;
+  margin-top: 5%;
+  
+}
+.signup-btn{
+  margin-top: 5%;
+}
+.signup-btn button{
+  color:white;
+  border-radius: 4px;
+  background-color: #1878F3;
+  height: 50px;
+  width: 80%;
+  font-size: larger;
+  margin-bottom: 10%;
+}
+
+
+
 
 @media screen and (max-width:900px){
     .layout-main{

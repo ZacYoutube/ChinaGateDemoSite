@@ -95,6 +95,32 @@ class Layout extends Component {
                     <div className = 'login-modal'>
                       <Modal show = {this.props.isOpen} handleClose = {() => this.props.toggle_close()}>
                          <h1> Sign In</h1>
+                          <div className = 'input-icon-1' >
+                            <i class="mdi mdi-account"></i>
+                            <input type = 'text'  className = 'field' placeholder = 'enter your username'/>
+                          </div>
+                          <div className = 'input-icon-2'>
+                            <i class="mdi mdi-lock"></i>
+                            <input type = 'password'  className = 'field' placeholder = 'enter your password'/>
+                          </div>
+                          <div className = 'forget-password'>
+                            <span>Forget Password?</span>
+                          </div>
+                          <div className = 'signin-btn'>
+                            <button>Log in</button>
+                          </div>
+
+                          <div className = 'or'>
+                            OR
+                          </div>
+
+                          <div className = 'signup-btn'>
+                            <button>Sign up</button>
+                          </div>
+                           
+                        
+                         
+
                       </Modal>
                     {/* <ReactModalLogin
                         visible={this.props.isOpen}
