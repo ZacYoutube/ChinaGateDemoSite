@@ -79,6 +79,11 @@
     letter-spacing: 2px;
 
   }  
+  .menu-description-box{
+    margin-left: -5%;
+    font-size: 11px;
+    font-family: 'Amatic SC', cursive;
+  }
   .menu-img button.active {
     background-color: #CB262F;
     color: white;

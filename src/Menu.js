@@ -146,7 +146,7 @@ class Menu extends Component {
                     </div>
                     
                   </div>
-                  <div className = "description-box">{each.description}</div>
+                  <div className = "menu-description-box">{each.description}</div>
                   </div>
                 
                 </div>
@@ -169,7 +169,7 @@ class Menu extends Component {
                     
                   </div>
                   
-                  <div className = "description-box">{each.description}</div>
+                  <div className = "menu-description-box">{each.description}</div>
                 </div>
                 
                 </div>
@@ -192,7 +192,7 @@ class Menu extends Component {
                   
                 </div>
                 
-                <div className = "description-box">{each.description}</div>
+                <div className = "menu-description-box">{each.description}</div>
               </div>
               
               </div>

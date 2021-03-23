@@ -11,25 +11,23 @@ import Contact from './Contact';
 import ReactModalLogin from "react-modal-login";
 import Modal from './Login_Modal.js';
 import { connect } from "react-redux";
+import logo from "./sushi_assets/logo.png";
 import {TOGGLE_CLOSE} from './constants/action-types';
 
 
-
+let input_arr = [];
 class Layout extends Component {
     constructor(props) {
         super(props);
         this.openModal = this.openModal.bind(this);
         this.closeModal = this.closeModal.bind(this);
-        this.onLoginSuccess = this.onLoginSuccess.bind(this);
-        this.onLoginFail = this.onLoginFail.bind(this);
-        this.startLoading = this.startLoading.bind(this);
-        this.finishLoading = this.finishLoading.bind(this);
-        this.afterTabsChange = this.afterTabsChange.bind(this);
+        this.onChange = this.onChange.bind(this);
+        this.login = this.login.bind(this);
 
         this.state = {
           showModal: false,
-          loading: false,
-          error: null
+          username: '',
+          password: ''
         };
       }
       openModal() {
@@ -44,35 +42,22 @@ class Layout extends Component {
           error: null
         });
       }
-     
-      onLoginSuccess(method, response) {
-        console.log("logged successfully with " + method);
+
+      onChange(i, e){
+        e.preventDefault();
+        input_arr[i] = e.target.value; 
+        if(input_arr.length > 2){
+          input_arr = [];
+        }
+        this.setState({username : input_arr[0]});
+        this.setState({password : input_arr[1]});
+       
+      }
+      login(){
+        
       }
      
-      onLoginFail(method, response) {
-        console.log("logging failed with " + method);
-        this.setState({
-          error: response
-        });
-      }
-     
-      startLoading() {
-        this.setState({
-          loading: true
-        });
-      }
-     
-      finishLoading() {
-        this.setState({
-          loading: false
-        });
-      }
-     
-      afterTabsChange() {
-        this.setState({
-          error: null
-        });
-      }
+    
     render() {
         return (
             <Router>
@@ -97,17 +82,17 @@ class Layout extends Component {
                          <h1> Sign In</h1>
                           <div className = 'input-icon-1' >
                             <i class="mdi mdi-account"></i>
-                            <input type = 'text'  className = 'field' placeholder = 'enter your username'/>
+                            <input type = 'text'  onChange = {(e)=> this.onChange(0, e)} className = 'field' placeholder = 'enter your username'/>
                           </div>
                           <div className = 'input-icon-2'>
                             <i class="mdi mdi-lock"></i>
-                            <input type = 'password'  className = 'field' placeholder = 'enter your password'/>
+                            <input type = 'password'  onChange = {(e)=> this.onChange(1, e)} className = 'field' placeholder = 'enter your password'/>
                           </div>
                           <div className = 'forget-password'>
                             <span>Forget Password?</span>
                           </div>
                           <div className = 'signin-btn'>
-                            <button>Log in</button>
+                            <button onClick = {this.login}>Log in</button>
                           </div>
 
                           <div className = 'or'>
@@ -117,6 +102,8 @@ class Layout extends Component {
                           <div className = 'signup-btn'>
                             <button>Sign up</button>
                           </div>
+
+                        
                            
                         
                          
