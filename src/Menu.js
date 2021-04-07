@@ -6,6 +6,15 @@ import orangeChicken from './sushi_assets/orange-chicken.jpg';
 import coconutShrimp from './sushi_assets/coconut-shrimp.jpg';
 import broccoliBeef from './sushi_assets/broccoli-beef.jpg';
 import barbequePork from './sushi_assets/barbeque-pork.jpeg';
+import kongbaoChicken from './sushi_assets/kongbaochicken.jpeg';
+import whiteline from './sushi_assets/white-removebg-preview (1).png';
+import dumpling from './sushi_assets/dumpling.jpeg';
+import banana from './sushi_assets/fried-banana-removebg-preview.png';
+import springroll from './sushi_assets/spring-roll-removebg-preview.png';
+import vietroll from './sushi_assets/viet-roll-removebg-preview.png';
+import chicken from './sushi_assets/chicken-removebg-preview.png';
+import about1 from './sushi_assets/about-background.png';
+import img from './sushi_assets/img.webp';
 import crawfish from './sushi_assets/crawfish.jpeg';
 import bun from './sushi_assets/bun.jpeg';
 import wonton_soup from './sushi_assets/wonton-soup.jpeg';
@@ -28,10 +37,14 @@ import meat_ball from './sushi_assets/meat ball.jpg';
 import kong_bao from './sushi_assets/kong bao.jpg';
 import spring_roll from './sushi_assets/spring roll.jpg';
 import egg_sushi from './sushi_assets/egg sushi.jpg';
+import about from './sushi_assets/about-background.jpg'
 import buns from './sushi_assets/buns.jpeg';
 import fanta from './sushi_assets/fanta.png';
 import {ADD_CART} from './constants/action-types';
 import store from './store/index';
+import { Icon, InlineIcon } from '@iconify/react';
+import chiliHot from '@iconify-icons/mdi/chili-hot';
+import newBox from '@iconify-icons/mdi/new-box';
 
 
 class Menu extends Component {
@@ -63,8 +76,9 @@ class Menu extends Component {
            {url: combo_4, price: '$7.99', name: 'Combo 4', description: 'Soft textures - smooth, silky, unctuous, coating, tender, and juicy. Talk.',cnt:0},
            {url: combo_5, price: '$6.99', name: 'Combo 5', description: 'Soft textures - smooth, silky, unctuous, coating, tender, and juicy.',cnt:0},
            {url: combo_6, price: '$8.99', name: 'Combo 6', description: 'Soft textures - smooth, silky, unctuous, coating, tender, oily, roasty, etc.',cnt:0},
-
-         ],
+           {url: kongbaoChicken, price: '$7.99', name: 'Combo 7', description: 'Slow-cooked for eight hours, this intensely flavored and juicy lamb shanke.',cnt:0},
+           {url: dumpling, price: '$7.99', name: 'Combo 8', description: 'Slow-cooked for eight hours, this intensely flavored and juicy lamb shanke.',cnt:0}          
+          ],
        },
        dinner_dishes:{
           dishes:[
@@ -142,11 +156,11 @@ class Menu extends Component {
                       <div style = {{color:'red'}}>{each.price}</div>
                     </div>
                     <div className = 'order-btn-div'>
-                      <button className = 'order-btn' onClick={()=>this.props.addToCard(each)}>Add to Cart</button>
+                      <button className = 'order-btn' onClick={()=>this.props.addToCard(each)}>Order</button>
                     </div>
                     
                   </div>
-                  <div className = "menu-description-box">{each.description}</div>
+                  {/* <div className = "menu-description-box">{each.description}</div> */}
                   </div>
                 
                 </div>
@@ -164,12 +178,12 @@ class Menu extends Component {
                       <div style = {{color:'red'}}>{each.price}</div>
                     </div>
                     <div className = 'order-btn-div'>
-                      <button className = 'order-btn'  onClick={()=>this.props.addToCard(each)}>Add to Cart</button>
+                      <button className = 'order-btn'  onClick={()=>this.props.addToCard(each)}>Order</button>
                     </div>
                     
                   </div>
                   
-                  <div className = "menu-description-box">{each.description}</div>
+                  {/* <div className = "menu-description-box">{each.description}</div> */}
                 </div>
                 
                 </div>
@@ -187,12 +201,12 @@ class Menu extends Component {
                     <div style = {{color:'red'}}>{each.price}</div>
                   </div>
                   <div className = 'order-btn-div'>
-                    <button className = 'order-btn'  onClick={()=>this.props.addToCard(each)}>Add to Cart</button>
+                    <button className = 'order-btn'  onClick={()=>this.props.addToCard(each)}>Order</button>
                   </div>
                   
                 </div>
                 
-                <div className = "menu-description-box">{each.description}</div>
+                {/* <div className = "menu-description-box">{each.description}</div> */}
               </div>
               
               </div>
@@ -204,13 +218,13 @@ class Menu extends Component {
                 <div className = "food-name-price-pic">
                   <img src = {each.url} className = "menu-drink-img"/>
                   <div className = "menu-food-name-price">
-                  <div style = {{display:'flex', alignItems:'center',justifyContent: 'space-between'}}>
+                    <div style = {{display:'flex', alignItems:'center',justifyContent: 'space-between'}}>
                     <div>
                       <div>{each.name}</div>
                       <div style = {{color:'red'}}>{each.price}</div>
                     </div>
                     <div className = 'order-btn-div'>
-                      <button className = 'order-btn'  onClick={()=>this.props.addToCard(each)}>Add to Cart</button>
+                      <button className = 'order-btn'  onClick={()=>this.props.addToCard(each)}>Order</button>
                     </div>
                     
                   </div>
@@ -223,13 +237,14 @@ class Menu extends Component {
     return (
       <div className = 'menu-component'>
          <div className = 'menu-header'>
-            <div>MENU</div>
+            {/* <div>MENU</div> */}
          </div>
          <div id="snackbar">Added dish succesfully to your cart.</div>
          <div className = 'menu-body'>
            <div className = 'menu-img'>
              <div className = 'menu-tab-navs'>
-                <button class="menu-tablinks" onClick={(e)=>this.openMenu(e, 'Breakfast')}  id="defaultOpen">Breakfast</button>
+                <button class="menu-tablinks" onClick={(e)=>this.openMenu(e, 'Main_menu')}  id="defaultOpen">Main</button>
+                <button class="menu-tablinks" onClick={(e)=>this.openMenu(e, 'Breakfast')}>Breakfast</button>
                 <button class="menu-tablinks" onClick={(e)=>this.openMenu(e, 'Lunch')}>Lunch</button>
                 <button class="menu-tablinks" onClick={(e)=>this.openMenu(e, 'Dinner')}>Dinner</button>
                 <button class="menu-tablinks" onClick={(e)=>this.openMenu(e, 'Drink')}>Drinks</button>
@@ -239,6 +254,81 @@ class Menu extends Component {
                 <div className = 'body_1'>
 
                     <div class = "menu-content-container">
+                          <div id = "Main_menu" class="menu-tabcontent">
+                           
+                            <div id = 'menu_first_layer'>
+                                <div className = 'left-pane'>
+                                  <div id = 'left-pane-part-1'>
+                                  <h2>POPULAR COMBOS</h2>
+                                  <span>Pick the Combos you like</span>
+                                  <br></br>
+                                  <img className = 'white-line-img' src = {whiteline}></img>
+                                  <div className = 'left-pane-lists'>
+                                      <div>
+                                        <h5>Combo 1</h5>
+                                        <div style = {{color: '#CB262F'}}>$6.99</div>
+                                        <span>Rice, Noodle plus ANY one of the main dishes</span>  
+                                        <Icon icon={chiliHot} color="#CB262F" width = '2em' height = '2em'/>                              
+                                      </div>
+                                      <div>
+                                        <h5>Combo 2</h5>
+                                        <div style = {{color: '#CB262F'}}>$7.99</div>                                      
+                                        <span>Rice, Noodle plus ANY two of the main dishes</span>
+                                        <Icon icon={chiliHot} color="#CB262F" width = '2em' height = '2em'/>                              
+                                      </div>
+                                      <div>
+                                        <h5>Combo 3</h5>
+                                        <div style = {{color: '#CB262F'}}>$8.99</div>                               
+                                        <span>Rice, Noodle plus ANY three of the main dishes</span>
+                                        <Icon icon={chiliHot} color="#CB262F" width = '2em' height = '2em'/>                              
+                                      </div>
+                                      <div>
+                                        <h5>Combo 4</h5>
+                                        <div style = {{color: '#CB262F'}}>$9.99</div>                                   
+                                        <span>Rice, Noodle plus ANY four of the main dishes</span>
+                                        <div style = {{display:'flex', justifyContent:'center'}}>
+                                          <Icon icon={newBox} color="green" width = '2em' height = '2em'/>
+                                          <Icon icon={chiliHot} color="#CB262F" width = '2em' height = '2em'/>
+                                        </div>                              
+                                      </div>
+                                  </div>
+                                  </div>
+                                  <div id = 'left-pane-part-2'>
+                                   <img src = {about1}></img>
+                                  </div>  
+                                </div>
+                                <div className = 'left-pane-second'>
+                                  <div id = 'about-pic-img'>
+                                   <img src = {about}></img>
+                                  </div>  
+                                  <div id = 'starter-menu'>
+                                    <h2>SIDE DISHES</h2> 
+                                    <div id = 'starter-list'>
+                                      <div>
+                                        <img src = {springroll}></img>
+                                        <div><span>Spring Roll <span style = {{color : '#CB262F'}}>$3.99 / EA</span></span></div>
+                                        <Icon icon={chiliHot} color="#CB262F" width = '2em' height = '2em'/>
+                                      </div>
+                                      <div id  = 'vietroll'>
+                                        <img src = {vietroll}></img>
+                                        <div><span>Shrimp Roll  <span style = {{color : '#CB262F'}}>$3.99 / EA</span></span></div>
+                                        <Icon icon={chiliHot} color="#CB262F" width = '2em' height = '2em'/>
+                                      </div>
+                                      <div>
+                                        <img src = {banana}></img>
+                                        <div><span>Fried Banana  <span style = {{color : '#CB262F'}}>$3.99 / 5P</span></span></div>
+                                        <Icon icon={newBox} color="green" width = '2em' height = '2em'/>
+                                      </div>
+                                      <div>
+                                        <img src = {chicken}></img>
+                                        <div><span>Fried Chicken  <span style = {{color : '#CB262F'}}>$4.99 / 2P</span></span></div>
+                                        <Icon icon={chiliHot} color="#CB262F" width = '2em' height = '2em'/>
+                                      </div>
+                                    </div>
+                                    </div> 
+                                </div>
+                            </div>
+                          </div>
                           <div id="Breakfast" class="menu-tabcontent">
                             {breakfast_images}
                           </div>
