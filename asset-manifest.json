@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/ChinaGateDemoSite/static/css/main.255f1ba1.chunk.css",
-    "main.js": "/ChinaGateDemoSite/static/js/main.116b8c23.chunk.js",
-    "main.js.map": "/ChinaGateDemoSite/static/js/main.116b8c23.chunk.js.map",
+    "main.css": "/ChinaGateDemoSite/static/css/main.cabe69b0.chunk.css",
+    "main.js": "/ChinaGateDemoSite/static/js/main.f7de00ba.chunk.js",
+    "main.js.map": "/ChinaGateDemoSite/static/js/main.f7de00ba.chunk.js.map",
     "runtime-main.js": "/ChinaGateDemoSite/static/js/runtime-main.3291c76c.js",
     "runtime-main.js.map": "/ChinaGateDemoSite/static/js/runtime-main.3291c76c.js.map",
     "static/css/2.8b58159c.chunk.css": "/ChinaGateDemoSite/static/css/2.8b58159c.chunk.css",
@@ -12,7 +12,7 @@
     "static/js/3.38de26d1.chunk.js.map": "/ChinaGateDemoSite/static/js/3.38de26d1.chunk.js.map",
     "index.html": "/ChinaGateDemoSite/index.html",
     "static/css/2.8b58159c.chunk.css.map": "/ChinaGateDemoSite/static/css/2.8b58159c.chunk.css.map",
-    "static/css/main.255f1ba1.chunk.css.map": "/ChinaGateDemoSite/static/css/main.255f1ba1.chunk.css.map",
+    "static/css/main.cabe69b0.chunk.css.map": "/ChinaGateDemoSite/static/css/main.cabe69b0.chunk.css.map",
     "static/js/2.7d9bea02.chunk.js.LICENSE.txt": "/ChinaGateDemoSite/static/js/2.7d9bea02.chunk.js.LICENSE.txt",
     "static/media/Chinese food.6e8473eb.png": "/ChinaGateDemoSite/static/media/Chinese food.6e8473eb.png",
     "static/media/Chow-mein.0ae7d59c.jpg": "/ChinaGateDemoSite/static/media/Chow-mein.0ae7d59c.jpg",
@@ -87,7 +87,7 @@
     "static/js/runtime-main.3291c76c.js",
     "static/css/2.8b58159c.chunk.css",
     "static/js/2.7d9bea02.chunk.js",
-    "static/css/main.255f1ba1.chunk.css",
-    "static/js/main.116b8c23.chunk.js"
+    "static/css/main.cabe69b0.chunk.css",
+    "static/js/main.f7de00ba.chunk.js"
   ]
 }
