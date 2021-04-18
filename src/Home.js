@@ -297,7 +297,7 @@ export default class Home extends Component
         document.getElementById(content[0].id).style.display = "none";
         document.getElementById(content[0].nextSibling.id).style.display = "block";
       }
-    },6000)
+    },10000)
 
     this.setState({intervalId: intervalId});
   }
@@ -551,7 +551,6 @@ export default class Home extends Component
               
             </div>
             {/* <div className = "container-line"/> */}
-            <div className = "text-under-party-title-container"> <div className = "text-under-party-title">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</div></div>       
             <Slider {...this.state.settings} style = {{marginTop:`${5}%`}}>
             {
               this.state.party_size.map((x,i)=>{

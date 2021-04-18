@@ -345,10 +345,6 @@ a:hover{
   border-radius: 20px;
   float: left;
 }
-.img-1:hover{
-  transform: scale(1.1);
-  cursor: pointer;
-}
 
 .card-body {
   display: flex;
@@ -378,12 +374,12 @@ a:hover{
 .card-text {
   font-size: 10px;
   /* margin-top: 10px; */
-  color:#8E8A85;
+  color:whitesmoke;
 }
 .card-text-1 {
   font-size: 15px;
   margin-top: 10px;
-  color:#8E8A85;
+  color:whitesmoke;
   text-align: justify;
   text-justify: inter-word;
 }
@@ -627,8 +623,8 @@ a:hover{
 
 }
 .drink-img{
-  width: 200px;
-  height: 270px;
+  width: 150px;
+  height: 220px;
   border-radius: 10px;
 }
 .description-box{
@@ -778,7 +774,7 @@ a:hover{
 }
 .check-section{
   display: block;
-  color: #8E8A85;
+  color: whitesmoke;
   float: left;
 }
 .check-section-container{
@@ -980,12 +976,17 @@ a:hover{
     .brand-name-1{
       top:50%;
     }
+    .food-img{
+      width: 250px;
+      height: 200px;
+    }
    
   }
 @media (max-width:650px) and (max-height:600px ) {
     .arrow{
       bottom:15%;
     }
+  
   }
 @media (max-width:650px) and (max-height:300px ) {
     .arrow{

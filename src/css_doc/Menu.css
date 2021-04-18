@@ -374,6 +374,12 @@
     .left-pane{
       margin-left: 0%;
     }
+    .left-pane h2{
+      font-size: 23px;
+    }
+    #starter-menu h2{
+      font-size: 23px;
+    }
     #left-pane-part-1{
       width: 500px;
     }
